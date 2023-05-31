@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body className="h-full min-h-screen bg-gradient-to-tr from-purple-400 to-purple-800">{children}</body>
     </html>
   )
 }
