@@ -3,7 +3,7 @@ const nextConfig = {
 	images: {
 		domains: ['github.com']
 	},
-	output: 'standalone'
+	output: 'export'
 }
 
 module.exports = nextConfig
