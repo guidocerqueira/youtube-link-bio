@@ -1,0 +1,11 @@
+.card-header {
+	@apply w-full flex flex-col gap-4 md:max-w-xl mx-4 py-8 bg-white my-8 rounded-xl px-4
+}
+
+.box-social {
+	@apply flex w-full justify-around py-8 border-b mb-4
+}
+
+.box-social-links {
+	@apply p-4 bg-purple-500 rounded-full text-white
+}

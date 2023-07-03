@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { FaExternalLinkAlt, FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
 
+import styles from './style.module.css'
+
 export default function Home() {
   return (
     <main className="w-full flex justify-center">
-      <div className="w-full flex flex-col gap-4 md:max-w-xl mx-4 py-8 bg-white my-8 rounded-xl px-4">
+      <div className={styles['card-header']}>
         <div className="flex items-center">
           <Image
             src="https://github.com/guidocerqueira.png"
@@ -19,31 +21,31 @@ export default function Home() {
             <p className="italic text-purple-800">Desenvolvedor de software e professor de programação.</p>
           </div>
         </div>
-        <div className="flex w-full justify-around py-8 border-b mb-4">
+        <div className={styles["box-social"]}>
           <a 
             href="https://youtube.com/@guidocerqueira" 
-            className="p-4 bg-purple-500 rounded-full text-white"
+            className={styles["box-social-links"]}
           >
             <FaYoutube />
           </a>
 
           <a 
             href="https://linkedin.com/in/guidocerqueira" 
-            className="p-4 bg-purple-500 rounded-full text-white"
+            className={styles["box-social-links"]}
           >
             <FaLinkedin />
           </a>
 
           <a 
             href="https://github.com/guidocerqueira" 
-            className="p-4 bg-purple-500 rounded-full text-white"
+            className={styles["box-social-links"]}
           >
             <FaGithub />
           </a>
 
           <a 
             href="https://instagram.com/guidocerqueira" 
-            className="p-4 bg-purple-500 rounded-full text-white"
+            className={styles["box-social-links"]}
           >
             <FaInstagram />
           </a>
